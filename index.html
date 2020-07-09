@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
+  
 <body>
 
   <header>
@@ -61,16 +62,48 @@
 <!---------------------------------------end header------------------------------  -->
 
 
+
+
 <!--main section  -->
 
 <main>
 
-
           <!-- banner -->
           <section class="hero">
             <h1 class="title">Ефективне рішення для вашого бізнесу </h1>
-            <a href="" class="button"> Заказати послугу</a>
+            <button  data-modal-open class="order"> заказати послугу </button>
           </section>
+          
+         
+                <div class="backdrop is-hidden" data-backdrop>
+                  <div class="modal">
+                    <h2>Залиште свої дані ми вам передзвонимо</h2>
+                    
+                    <form>
+
+                      <div class="input-about">
+                        <input type="text" name="name" id="name" placeholder="Мороз Олег">
+                        <label for="name"> Ім'я</label></br>
+                        
+                        <input type="tel" name="phone" id="phone" placeholder="+38 (---)-------">
+                        <label for="phone">Телефон</label></br>
+                        
+                        <input type="email" name="mail" id="mail" placeholder="somebody@gmail.com">
+                        <label for="mail"> Пошта
+                        </label> </br>
+                      </div>
+
+                  
+
+                      <button type="submit" class="submit">
+                        Відправити
+                      </button>
+                    </form>
+                    <button data-modal-close class="close-order"> X </button>
+                  </div>
+                </div>
+
+
 
 
           <!--Section how it work  -->
@@ -406,6 +439,10 @@
               <p class="copyright">2020 | Developed by GoIt Students</p>
 
 </footer>
+
+
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -68,40 +68,54 @@
 
 <main>
 
-          <!-- banner -->
-          <section class="hero">
-            <h1 class="title">Ефективне рішення для вашого бізнесу </h1>
-            <button  data-modal-open class="order"> заказати послугу </button>
-          </section>
-          
-         
-                <div class="backdrop is-hidden" data-backdrop>
-                  <div class="modal">
-                    <h2>Залиште свої дані ми вам передзвонимо</h2>
-                    
-                    <form>
+  <!-- banner -->
+  <section class="hero">
+    <h1 class="title">Ефективне рішення для вашого бізнесу </h1>
+    <button data-modal-open class="order"> заказати послугу </button>
+  </section>
 
-                      <div class="input-about">
-                        <input type="text" name="name" id="name" placeholder="Мороз Олег">
-                        <label for="name"> Ім'я</label></br>
-                        
-                        <input type="tel" name="phone" id="phone" placeholder="+38 (---)-------">
-                        <label for="phone">Телефон</label></br>
-                        
-                        <input type="email" name="mail" id="mail" placeholder="somebody@gmail.com">
-                        <label for="mail"> Пошта
-                        </label> </br>
-                      </div>
 
-                  
+  <div class="backdrop is-hidden" data-backdrop>
+    <div class="modal">
+      <h2>Залиште свої дані ми вам передзвонимо</h2>
+  
+      <form>
+  
+        <div class="input-about">
+          <div class="form-field">
+            <input class="form-input" type="text" name="name" id="name" placeholder=" ">
+            <label class="form-label" for="name"> Ім'я</label>
+          </div>
+  
+          <div class="form-field">
+            <input class="form-input" type="tel" name="phone" id="phone" placeholder=" ">
+            <label class="form-label" for="phone">Телефон</label></br>
+          </div>
+  
+          <div class="form-field">
+            <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
+            <label class="form-label" for="mail"> Пошта</label>
+          </div>
+  
+        </div>
 
-                      <button type="submit" class="submit">
-                        Відправити
-                      </button>
-                    </form>
-                    <button data-modal-close class="close-order"> X </button>
-                  </div>
-                </div>
+        <textarea name="textarea" placeholder="Коментарі">
+
+                            </textarea> </br>
+
+        <input type="checkbox" name="tick" id="accept">
+        <label for="accept">Погоджуюся з розсилкою та приймаю <a href=""> Умови договору</a></label>
+
+
+        <button type="submit" class="submit">
+
+
+          Відправити
+        </button>
+      </form>
+      <button data-modal-close class="close-order"> X </button>
+    </div>
+  </div>
 
 
 

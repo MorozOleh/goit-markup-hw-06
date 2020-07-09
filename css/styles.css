@@ -330,13 +330,18 @@ align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  
+
 .input-about{
+  
   display: flex;
   flex-direction: column;
 }
 
-
+.form-field{
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
 
 .modal h2{
   font-family: var(--font-text);
@@ -366,6 +371,15 @@ align-items: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.form-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form-input:focus + .form-label{
+  transform: translateY(-40px);
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 

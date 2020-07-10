@@ -363,7 +363,7 @@ align-items: center;
   margin:0;
   padding-top: 10px;
   padding-bottom: 10px;
-  
+  text-indent: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -383,7 +383,7 @@ align-items: center;
   height: 18px;
   top:0px;
   left: 20px;
-  fill:gold;
+  fill:var(--primary-text-color);
   transform: translateY(50%);
 }
 

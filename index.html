@@ -79,29 +79,39 @@
     <div class="modal">
       <h2>Залиште свої дані ми вам передзвонимо</h2>
   
-      <form>
+      <form class="form" autocomplete="off">
   
-        <div class="input-about">
+        
           <div class="form-field">
             <input class="form-input" type="text" name="name" id="name" placeholder=" ">
             <label class="form-label" for="name"> Ім'я</label>
+            <svg class="icon-input">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
           </div>
-  
+          
           <div class="form-field">
             <input class="form-input" type="tel" name="phone" id="phone" placeholder=" ">
-            <label class="form-label" for="phone">Телефон</label></br>
+            <label class="form-label" for="phone">Телефон</label>
+            <svg class="icon-input">
+              <use href="./images/sprite.svg#icon-telefon"></use>
+            </svg>
           </div>
-  
+          
           <div class="form-field">
             <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
             <label class="form-label" for="mail"> Пошта</label>
+            <svg class="icon-input">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
           </div>
   
-        </div>
+         <div class="form-field">
+                  <textarea name="textarea" placeholder="Коментарі">
+                                              </textarea>
+         </div>
 
-        <textarea name="textarea" placeholder="Коментарі">
 
-                            </textarea> </br>
 
         <input type="checkbox" name="tick" id="accept">
         <label for="accept">Погоджуюся з розсилкою та приймаю <a href=""> Умови договору</a></label>

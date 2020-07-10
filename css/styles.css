@@ -188,8 +188,8 @@ header{
 }
 
 .icon-phone{
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 15px;
   margin-right: 10px;
   fill:currentColor;
 }
@@ -296,6 +296,7 @@ align-items: center;
   top: 0px;
   left: 0px;
   background: rgba(0, 0, 0, 0.2);
+  z-index: 11;
 }
 
 .backdrop.is-hidden{
@@ -332,9 +333,9 @@ align-items: center;
 
 
 .form{
-  
   display: flex;
   flex-direction: column;
+  padding-top: 18px;
 }
 
 .modal h2{
@@ -347,7 +348,7 @@ align-items: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   padding-top: 40px;
-  margin-bottom:30px ;
+  margin-bottom:12px ;
 }
 
 .form-field{
@@ -355,14 +356,22 @@ align-items: center;
   margin-left: 41px;
   margin-right: 41px;
   margin-bottom: 28px;
-  
+}
+
+
+.form-field:last-child{
+  margin-bottom: 10px;
+}
+
+.button-field{
+  text-align:center;
 }
 
 .form-input{
   width: 100%;
   margin:0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-indent: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -374,6 +383,7 @@ align-items: center;
   line-height: 16px;
   letter-spacing: 0.01em;
   color: #757575;
+  background-origin: border-box;
   
 }
 
@@ -387,6 +397,48 @@ align-items: center;
   transform: translateY(50%);
 }
 
+.checkbox-field{
+  display: flexbox;
+  margin-left: 54px;
+  margin-bottom: 30px;
+}
+
+.icon-checkbox{
+width: 16px;
+height: 15px;
+border: 1px solid #757575;
+background-image: url(../css/images/icon-check.svg);
+background-origin: border-box;
+border-radius: 2px;
+
+}
+
+.checkbox:checked + .icon-checkbox{
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+.form-area{
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.checkbox{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  top: 0;
+  left: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .submit{
   display: inline-block;
@@ -418,16 +470,16 @@ align-items: center;
   color: #757575;
 }
 
+
+.form-area:focus{
+  border-color:var(--accent-color);
+}
+
 .form-input:focus{
  border-color:var(--accent-color);
- outline: none;
- border-radius: 4px;}
+ }
 
- /* .form-input:placeholder-shown{
-   background-color: aquamarine;
- } */
-
-.form-input:focus + .form-label,
+ .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown)+ .form-label{
   transform: translateY(-40px) translateX(-26px);
   color: var(--accent-color);

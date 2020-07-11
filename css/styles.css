@@ -135,12 +135,12 @@ header{
   color:var(--accent-color);
 }
 
-.site-nav__link.current{
+.site-nav__link--active{
   color:var(--accent-color);
 }
 
 
-.site-nav__link.current::after{
+.site-nav__link--active::after{
   content:"";
   display: block;
   position: absolute;

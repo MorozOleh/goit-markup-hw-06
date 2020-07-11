@@ -279,14 +279,11 @@ align-items: center;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
  }
-
 
 .order:hover,
 .order:focus{
-  background:rgba(21,96,240, 0.85);
-  color: var(--primary-white-color);
+  background:#188CE8;
 }
 
 /* --------backdrop------- */

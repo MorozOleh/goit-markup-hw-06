@@ -42,15 +42,17 @@
                 <svg class="address-nav__icon-mail">
                   <use href="./images/sprite.svg#icon-mail"></use>
                 </svg>
-                info@devstudio.com </a></li>
+                info@devstudio.com </a>
+            </li>
             <li class="address-nav__item"><a href="tel:+38096111111" class="address-nav__link">
                 <svg class="address-nav__icon-phone">
                   <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
-                +38 096 111 11 11</a></li>
+                +38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
-      </nav>
+        </nav>
 
       <!-------------------------end address mail and phone----------------------------  -->
 
@@ -67,15 +69,15 @@
   <main>
 
     <!-- banner -->
-    <section class="hero">
-      <h1 class="title">Ефективне рішення для вашого бізнесу </h1>
-      <button data-modal-open class="order"> Заказати послугу </button>
+    <section class="banner">
+      <h1 class="banner__title">Ефективне рішення для вашого бізнесу </h1>
+      <button data-modal-open class="banner__botton"> Заказати послугу </button>
     </section>
 
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <h2>Залиште свої дані ми вам передзвонимо</h2>
+        <h2 class="modal_title">Залиште свої дані ми вам передзвонимо</h2>
 
         <form autocomplete="off">
 
@@ -129,8 +131,8 @@
             </button>
           </div>
         </form>
-        <button data-modal-close class="close-order">
-          <svg class="icon-x" width=18 height=18>
+        <button data-modal-close class="modal__botton">
+          <svg class="modal__icon">
             <use href="./images/sprite.svg#icon-x"></use>
           </svg>
         </button>

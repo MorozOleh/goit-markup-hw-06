@@ -76,9 +76,12 @@ header{
 }
 /* ----------------------------------------------------end / container -------------------------------------------------------------*/
 
+/* ---------------------------------------------------start   main navigation------------------------------------------------------ */
 
-/* -----------------------------------------------------site-navigator------------------------------------------------------------- */
-
+.container > .header-nav{
+  display: flex;
+  align-items: center;
+}
 /* ---------------------------------------------------------logo------------------------------------------------------------------- */
 
 .logo {
@@ -101,24 +104,20 @@ header{
 }
 
 /* ----------------------------------------------------------end logo-------------------------------------------------------------- */
+/* -----------------------------------------------------     site-nav------------------------------------------------------------- */
 
 
-
-/* ---------------------------------------------------start   main navigation------------------------------------------------------ */
-
-.container > .flex-nav{
+.site-nav{
   display: flex;
-  align-items: center;
+  margin-left: 85px;
 }
 
 
-
-.site-nav .link.current{
-  color:var(--accent-color);
+.site-nav__item + .site-nav__item{
+  margin-left: 50px;
 }
 
-
-.site-nav .link{
+.site-nav__link{
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -131,11 +130,19 @@ header{
   text-decoration: none;
   position: relative;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
  }
 
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color:var(--accent-color);
+}
 
-.site-nav .link.current::after{
+.site-nav__link.current{
+  color:var(--accent-color);
+}
+
+
+.site-nav__link.current::after{
   content:"";
   display: block;
   position: absolute;
@@ -146,24 +153,7 @@ header{
 }
 
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color:var(--accent-color);
-}
-
 /* -------------------------------------------------------------------------------------------------------------------------------- */
-
-.site-nav{
-  display: flex;
-  margin-left: 85px;
-}
-
-.site-nav .flex-link + .flex-link{
-  margin-left: 50px;
-}
-
-
-
 
 /* ---------------------------------------------------start address---------------------------------------------------------------- */
 

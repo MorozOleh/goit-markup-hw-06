@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -17,7 +16,7 @@
   <header>
     <!----------------------------navigation container---------------------------------------->
     <div class="container">
-      <nav class="flex-nav">
+      <nav class="header-nav">
 
         <!------------------------------------- logo ------------------------------------------->
         <a href="./index.html" class="logo">
@@ -28,11 +27,11 @@
 
         <!---------------------------------- main navigation ----------------------------------->
         <ul class="list-style site-nav">
-          <li class="flex-link"><a class="link" href="index.html"> Студія </a></li>
-          <li class="flex-link"><a class="link current" href="portfolio.html"> Портфоліо </a></li>
-          <li class="flex-link"><a class="link" href=""> Контакти </a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html"> Студія </a></li>
+          <li class="site-nav__item"><a class="site-nav__link current" href="portfolio.html"> Портфоліо </a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href=""> Контакти </a></li>
         </ul>
-      
+
         <!--------------------------------end main navigation---------------------------------  -->
 
         <!---------------------------- address mail and phone ------------------------------------>
@@ -61,66 +60,69 @@
 
 
   <!-- main -->
-<main>
+  <main>
 
-<h1 class="off">Портфоліо</h1>
-<section>
-  <div class="container bottons">
-      <ul class="list-style flex-button">
-        <li class="list"><button class="button-radio">Усе</button></li>
-        <li class="list"><button class="button-radio">Веб-сайти</button></li>
-        <li class="list"><button class="button-radio">Аплікації</button></li>
-        <li class="list"><button class="button-radio">Дизайн</button></li>
-        <li class="list"><button class="button-radio">Маркетинг</button></li>
-      </ul>
-  </div>
-</section>
+    <h1 class="off">Портфоліо</h1>
+    <section>
+      <div class="container bottons">
+        <ul class="list-style flex-button">
+          <li class="list"><button class="button-radio">Усе</button></li>
+          <li class="list"><button class="button-radio">Веб-сайти</button></li>
+          <li class="list"><button class="button-radio">Аплікації</button></li>
+          <li class="list"><button class="button-radio">Дизайн</button></li>
+          <li class="list"><button class="button-radio">Маркетинг</button></li>
+        </ul>
+      </div>
+    </section>
 
 
-<section class="container portfolio">
-  <ul class="list-style flex-style">
-    <li class="list"><a href="" class="card">
-        <div class="product-thumb">
-          <img src="./images/technokryak.jpg" alt="technokryak" width="370" height="294" />
-          <div class="container-position">
-            <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу
-              для
-              цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-          </div>
-        </div>
-        <div class="style-card">
-          <h2 class="name-post"> Технокряк </h2>
-          <p class="post-about"> Веб-Сайт </p>
-        </div>
-      </a>
-    </li>
-        
-        
-    <li class="list"><a href="" class="card">
-        <div class="product-thumb">
-          <img src="./images/poster.jpg" alt="poster" width="370" height="294" />
-          <div class="container-position">
-            <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу
-              для
-              цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-          </div>
-        </div>
-        <div class="style-card">
-          <h2 class="name-post"> Постер New Orlean vs Golden Star </h2>
-          <p class="post-about"> Дизайн </p>
-        </div>
-      </a>
-    </li>
-        
+    <section class="container portfolio">
+      <ul class="list-style flex-style">
+        <li class="list"><a href="" class="card">
+            <div class="product-thumb">
+              <img src="./images/technokryak.jpg" alt="technokryak" width="370" height="294" />
+              <div class="container-position">
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
+                  платформу
+                  для
+                  цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.</p>
+              </div>
+            </div>
+            <div class="style-card">
+              <h2 class="name-post"> Технокряк </h2>
+              <p class="post-about"> Веб-Сайт </p>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="list"><a href="" class="card">
+            <div class="product-thumb">
+              <img src="./images/poster.jpg" alt="poster" width="370" height="294" />
+              <div class="container-position">
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
+                  платформу
+                  для
+                  цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.</p>
+              </div>
+            </div>
+            <div class="style-card">
+              <h2 class="name-post"> Постер New Orlean vs Golden Star </h2>
+              <p class="post-about"> Дизайн </p>
+            </div>
+          </a>
+        </li>
+
         <li class="list"><a href="" class="card">
             <div class="product-thumb">
               <img src="./images/seafood.jpg" alt="seafood" width="370" height="294" />
               <div class="container-position">
-                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
                   платформу
                   для
                   цифрового
@@ -133,12 +135,13 @@
             </div>
           </a>
         </li>
-       
+
         <li class="list"><a href="" class="card">
             <div class="product-thumb">
               <img src="./images/prime.jpg" alt="prime" width="370" height="294" />
               <div class="container-position">
-                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
                   платформу
                   для
                   цифрового
@@ -151,12 +154,13 @@
             </div>
           </a>
         </li>
-        
+
         <li class="list"><a href="" class="card">
             <div class="product-thumb">
               <img src="./images/boxes.jpg" alt="boxes" width="370" height="294" />
               <div class="container-position">
-                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
                   платформу
                   для
                   цифрового
@@ -169,12 +173,13 @@
             </div>
           </a>
         </li>
-       
+
         <li class="list"><a href="" class="card">
             <div class="product-thumb">
               <img src="./images/inspiration.jpg" alt="inspiration" width="370" height="294" />
               <div class="container-position">
-                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
                   платформу
                   для
                   цифрового
@@ -187,30 +192,32 @@
             </div>
           </a>
         </li>
-       
-            <li class="list"><a href="" class="card">
-                <div class="product-thumb">
-                  <img src="./images/limited.jpg" alt="limited" width="370" height="294" />
-                  <div class="container-position">
-                    <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-                      платформу
-                      для
-                      цифрового
-                      шпионажа и атак на защищённые сервера конкурентов.</p>
-                  </div>
-                </div>
-                <div class="style-card">
-                  <h2 class="name-post"> Видавництво Limited Edition </h2>
-                  <p class="post-about"> Дизайн </p>
-                </div>
-              </a>
-            </li>
-       
+
+        <li class="list"><a href="" class="card">
+            <div class="product-thumb">
+              <img src="./images/limited.jpg" alt="limited" width="370" height="294" />
+              <div class="container-position">
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
+                  платформу
+                  для
+                  цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.</p>
+              </div>
+            </div>
+            <div class="style-card">
+              <h2 class="name-post"> Видавництво Limited Edition </h2>
+              <p class="post-about"> Дизайн </p>
+            </div>
+          </a>
+        </li>
+
         <li class="list"><a href="" class="card">
             <div class="product-thumb">
               <img src="./images/lab.jpg" alt="lab" width="370" height="294" />
               <div class="container-position">
-                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
                   платформу
                   для
                   цифрового
@@ -223,12 +230,13 @@
             </div>
           </a>
         </li>
-       
+
         <li class="list"><a href="" class="card">
             <div class="product-thumb">
               <img src="./images/growing.jpg" alt="growing" width="370" height="294" />
               <div class="container-position">
-                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                <p class="kryak">Технокряк это современная площадка распространения коронавируса. Компании используют
+                  эту
                   платформу
                   для
                   цифрового
@@ -241,91 +249,91 @@
             </div>
           </a>
         </li>
+      </ul>
+    </section>
+
+  </main>
+
+
+
+
+
+  <!-- Підвал -->
+
+  <footer class="footer-background">
+    <div class="container footer-flex">
+      <!-- logo -->
+
+      <div class="column one">
+
+        <a href="./index.html" class="logo">
+          <span class="logo-accent">Web </span>
+          <span class="logo inverse"> Studio </span>
+        </a>
+
+        <!--Адреси  -->
+        <address>
+          <ul class=" list-style address-footer">
+            <li class="list address"><span class="address-street"> м.Київ,<br /> пр-т Лесі Українки, 26 </span> </li>
+            <li class="list link"><a href="mailto:info@example.com"> info@example.com</a></li>
+            <li class="list link"><a href="tel:+38096111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+
+      </div>
+
+
+      <!-- Долучись до нас в соцмережу -->
+
+      <div class="column two">
+
+        <p class="join">Приєднюйтесь</p>
+
+        <ul class="list-style footer-links">
+          <li class="list"><a href="">
+              <svg class="icon-footer" width="20" height="20">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a></li>
+          <li class="list"><a href="">
+              <svg class="icon-footer">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
+          <li class="list"><a href="">
+              <svg class="icon-footer facebook">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a></li>
+          <li class="list"><a href="">
+              <svg class="icon-footer linkedin">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a></li>
         </ul>
- </section>
+      </div>
+    </div>
 
-</main>
+    <div class="column three">
+      <p class="share">Підпишись на розсилку</p>
+      <div class="form-footer">
+        <form>
+          <label for="share-email"></label>
+          <input class="input-share" type=email name="" id="share-email" placeholder="e-mail">
+          <button class="share-botton">
+            Підписатися
+            <svg class="icon-send">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    </div>
 
+    <p class="copyright">2020 | Developed by GoIt Students</p>
 
+  </footer>
+</body>
 
-
-
-          <!-- Підвал -->
-          
-            <footer class="footer-background">
-              <div class="container footer-flex">
-                <!-- logo -->
-            
-                <div class="column one">
-            
-                  <a href="./index.html" class="logo">
-                    <span class="logo-accent">Web </span>
-                    <span class="logo inverse"> Studio </span>
-                  </a>
-            
-                  <!--Адреси  -->
-                  <address>
-                    <ul class=" list-style address-footer">
-                      <li class="list address"><span class="address-street"> м.Київ,<br /> пр-т Лесі Українки, 26 </span> </li>
-                      <li class="list link"><a href="mailto:info@example.com"> info@example.com</a></li>
-                      <li class="list link"><a href="tel:+38096111111">+38 096 111 11 11</a></li>
-                    </ul>
-                  </address>
-            
-                </div>
-            
-            
-                <!-- Долучись до нас в соцмережу -->
-            
-                <div class="column two">
-                
-                  <p class="join">Приєднюйтесь</p>
-                
-                  <ul class="list-style footer-links">
-                    <li class="list"><a href="">
-                        <svg class="icon-footer" width="20" height="20">
-                          <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a></li>
-                    <li class="list"><a href="">
-                        <svg class="icon-footer">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a></li>
-                    <li class="list"><a href="">
-                        <svg class="icon-footer facebook">
-                          <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                      </a></li>
-                    <li class="list"><a href="">
-                        <svg class="icon-footer linkedin">
-                          <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                      </a></li>
-                  </ul>
-                </div>
-                </div>
-                
-                <div class="column three">
-                  <p class="share">Підпишись на розсилку</p>
-                  <div class="form-footer">
-                    <form>
-                      <label for="share-email"></label>
-                      <input class="input-share" type=email name="" id="share-email" placeholder="e-mail">
-                      <button class="share-botton">
-                        Підписатися
-                        <svg class="icon-send">
-                          <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-                </div>
-
-              <p class="copyright">2020 | Developed by GoIt Students</p>
-            
-            </footer>
-          </body>
-          
-          </html>
+</html>

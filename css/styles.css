@@ -155,7 +155,21 @@ header{
 
 /* ---------------------------------------------------start address---------------------------------------------------------------- */
 
-.address a{
+.header-address{
+  margin-left: auto;
+}
+
+.address-nav {
+  display: flex;
+  justify-content: center;
+
+}
+
+.address-nav__item + .address-nav__item{
+  margin-left: 50px;
+}
+
+.address-nav__link{
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -171,52 +185,23 @@ header{
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.icon-mail{ 
+.address-nav__icon-mail{ 
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill:currentColor;
 }
 
-.icon-phone{
+.address-nav__icon-phone{
   width: 10px;
   height: 15px;
   margin-right: 10px;
   fill:currentColor;
 }
 
-.address a:hover,
-.address a:focus{
+.address-nav__link:hover,
+.address-nav__link:focus{
  color:var(--accent-color);
-}
-
-.phone:hover,
-.phone:focus{
-  fill:var(--accent-color)
-}
-
-.mail:hover,
-.mail:focus{
-  fill: var(--accent-color);
-}
-
-
-.for-margin{
-  margin-left: auto;
-}
-.address {
-  display: flex;
-  justify-content: center;
-}
-
-.address > .link{
-display: flex;
-align-items: center;
-}
-
-
-.address > .link + .link{
-  margin-left: 50px;
 }
 /* -------------------------------------------------------finish address----------------------------------------------------------- */
 

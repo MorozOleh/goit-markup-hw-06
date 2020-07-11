@@ -84,15 +84,15 @@ header{
 }
 /* ---------------------------------------------------------logo------------------------------------------------------------------- */
 
-.logo {
+.logo-link{
+  display: block;
   text-decoration:none ;
   color:var(--title-text-color);
-  text-decoration:none;
   font-family:var(--font-logo);
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1.19;
   font-style: normal ;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
  .logo-accent{
@@ -102,10 +102,8 @@ header{
 .logo.inverse{
   color:var(--primary-white-color);
 }
-
 /* ----------------------------------------------------------end logo-------------------------------------------------------------- */
 /* -----------------------------------------------------     site-nav------------------------------------------------------------- */
-
 
 .site-nav{
   display: flex;

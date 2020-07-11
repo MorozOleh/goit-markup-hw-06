@@ -377,7 +377,7 @@ align-items: center;
   margin-bottom: 20px;
 }
 
-.form-input{
+.form-field__input{
   width: 100%;
   margin:0;
   padding-top: 11px;
@@ -394,7 +394,7 @@ align-items: center;
   background-origin: border-box;
   }
 
-.form-label{
+.form-field__label{
   position: absolute;
   top: 50%;
   left: 42px;
@@ -407,7 +407,7 @@ align-items: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.icon-input{
+.form-field__icon{
   position: absolute;
   width: 18px;
   height: 18px;
@@ -429,7 +429,7 @@ align-items: center;
   color: var(--secondary-color);
 }
 
-.icon-checkbox{
+.checkbox-field__icon{
 width: 16px;
 height: 15px;
 margin-right: 8px;
@@ -444,12 +444,12 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
   padding-left: 5px;
 }
 
-.checkbox:checked + .icon-checkbox{
+.checkbox:checked + .checkbox-field__icon{
   background-color: var(--accent-color);
   border-color: transparent;
 }
 
-.form-area{
+.form-field__area{
   width: 448px;
   height: 120px;
   resize: none;
@@ -492,22 +492,22 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
   padding-top: 30px;
 }
 
-.form-area:focus{
+.form-field__area:focus{
   border-color:var(--accent-color);
 }
 
-.form-input:focus{
+.form-field__input:focus{
  border-color:var(--accent-color);
  }
 
- .form-input:focus + .form-label,
-.form-input:not(:placeholder-shown)+ .form-label{
+ .form-field__input:focus + .form-field__label,
+.form-field__input:not(:placeholder-shown)+ .form-field__label{
   transform: translateY(-40px) translateX(-26px);
   color: var(--accent-color);
 }
 
-.form-input:focus ~ .icon-input,
-.form-input:not(:placeholder-shown) ~ .icon-input{
+.form-field__input:focus ~ .form-field__icon,
+.form-field__input:not(:placeholder-shown) ~ .form-field__icon{
   fill: var(--accent-color);
 }
 

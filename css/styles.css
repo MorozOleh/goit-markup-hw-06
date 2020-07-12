@@ -487,12 +487,12 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 /* ----------------------------------------------section how it work--------------------------------------------------------------- */
 
-.container.it-work{
+.container.features{
   padding-top: 94px;
   font-family: var(--font-text);
 }
 
-.it-work > .title{
+.features__title{
   display: none;
   font-style: normal;
   font-weight: 700;
@@ -502,6 +502,19 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
   letter-spacing: 0.03em; 
   color: var(--primary-text-color);
  }
+
+.features__list{
+  display: flex; 
+}
+
+.features__item{
+  margin-right: 30px;
+  width: 270px;
+}
+
+.features__item:last-child{
+  margin-right: 0px;
+}
 
 .style{
   display: inline-flex;
@@ -515,15 +528,12 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.antenna,
-.clock,
-.diagrama,
-.astronaut{
+.features__icon{
   width: 70px;
   height: 70px;
 }
 
-.it-work .subtitle{
+.features .subtitle{
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -535,7 +545,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.it-work .how-work{
+.features .how-work{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -546,24 +556,12 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.it-work .flex{
-  display: flex; 
-}
-
-.flex .list{
-  margin-right: 30px;
-  width: 270px;
-}
-
-.flex .list:last-child{
-  margin-right: 0px;
-}
 
 .subtitle{
   margin-bottom: 10px;
 }
 
-/* -------------------------------------------------------end section It-work------------------------------------------------------ */
+/* -------------------------------------------------------end section features------------------------------------------------------ */
 
 
 /* -------------------------------------------------------Чим ми займаємось-------------------------------------------------------- */
@@ -664,6 +662,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .container-teams__photo{
+
   width: 270px;
   height: 260px;
 }
@@ -708,10 +707,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
   cursor: grab;
 }
 
-.instagram,
-.twitter,
-.facebook,
-.linkedin {
+.staff-social__icon {
   width: 20px;
   height: 20px;
   fill:#afb1b8;

@@ -1006,7 +1006,7 @@ fill:var(--primary-white-color);
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 
 /*-------------------------------------------------------- Join-------------------------------------------------------------------- */
-.join{
+.area-second__title{
   margin-bottom: 20px;
   font-family: var(--font-text);
   font-style: normal;
@@ -1058,7 +1058,7 @@ fill:var(--primary-white-color);
 
 /* -----------column-three---------- */
 
-.area-third__text{
+.area-third__title{
 font-family: var(--font-text);
 font-style: normal;
 font-weight: 700;

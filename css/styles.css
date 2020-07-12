@@ -1058,15 +1058,10 @@ fill:var(--primary-white-color);
 
 /* -----------column-three---------- */
 
-.form-footer{
-  display: flex;
-  align-items: center;
-}
-
-.share{
-font-family: Roboto;
+.area-third__text{
+font-family: var(--font-text);
 font-style: normal;
-font-weight: bold;
+font-weight: 700;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
@@ -1075,7 +1070,12 @@ color: #FFFFFF;
 margin-bottom: 20px;
 }
 
-.input-share{
+.footer-form{
+  display: flex;
+  align-items: center;
+}
+
+.footer-form__input{
   max-height: 50px;
 width: 368px;
 padding-top: 15px;
@@ -1089,7 +1089,7 @@ background-color: rgba(0, 0, 0, 0);
 color: var(--primary-white-color);
 }
 
-.share-botton{
+.footer-form__botton{
   display: inline-flex;
   align-items: center;
   margin-left: 12px;
@@ -1111,7 +1111,7 @@ color: var(--primary-white-color);
   background-origin: border-box;
 }
 
-.icon-send{
+.footer-form__icon{
   margin-left: 10px;
   width: 24px;
   height: 24px;
